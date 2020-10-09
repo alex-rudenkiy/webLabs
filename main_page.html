@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" style="padding: 0">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <script>
+        window.onload = () => {
+            var list = document.getElementsByClassName("fileBox clicked p-2");
+            for (var i = 0; i < list.length; i++) list[i].classList.add("shadow-sm")
+
+
+        }
+
+        function closeAlbums() {
+            var body = document.getElementsByTagName("body")[0];
+            body.setAttribute('style', '')
+
+        }
+
+        function openAlbums() {
+            var body = document.getElementsByTagName("body")[0];
+            body.setAttribute('style', 'background-image:url("img/arts/Rip N Dip - Getter.jpg"); backdrop-filter: blur(100px); background-repeat: no-repeat; background-size: cover;')
+        }
+    </script>
+
+</head>
+
+
+<body class="d-flex flex-column min-vh-100 ">
+
+
+<div class="wrapper flex-grow-1 mt-5 pl-5 pr-5">
+
+    <div>
+        <div class="col">
+            <div class="row" style="margin: 0; height: 5em">
+                <div class="d-flex justify-content-center" style="height: inherit;">
+                    <div class="row" style="height: inherit;">
+                        <img src="32.jpg" class="rounded-circle " alt="Cinque Terre" style="height: inherit; position: absolute;">
+                        <section style="position: relative;">
+                            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="5em" height="5em" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            </svg>
+                        </section>
+
+                        <div>
+                            <p class="ml-3" style="font-family: myFirstFont; font-size: 1.5em;">Alex-rudenkiy</p>
+                            <p class="ml-2" style="font-family: myFirstFont; font-size: 1em;">Занято 352мб/1гб</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="justify-content-center row">
+
+
+                <ul class="nav nav-tabs" style="border-bottom: none">
+                    <li class="nav-item" onclick="closeAlbums()">
+                        <a class="nav-link active" data-toggle="tab" href="#description" style="background: #ffffffad">Все
+                            файлы</a>
+                    </li>
+                    <li class="nav-item" onclick="closeAlbums()">
+                        <a class="nav-link" data-toggle="tab" href="#opinion" style="background: #ffffffad">
+                            <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-image-alt"
+                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.648 6.646a.5.5 0 0 1 .577-.093l4.777 3.947V15a1 1 0 0 1-1 1h-14a1 1 0 0 1-1-1v-2l3.646-4.354a.5.5 0 0 1 .63-.062l2.66 2.773 3.71-4.71z"/>
+                                <path fill-rule="evenodd" d="M4.5 5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                            </svg>
+                            Картинки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#characteristics" onclick="openAlbums()">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-music-note-beamed"
+                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                            </svg>
+                            Музыка</a>
+                    </li>
+
+                </ul>
+
+                <div class="w-100"></div>
+
+
+                <div class="tab-content  w-100">
+                    <div class="tab-pane fade show active mt-4 shadow-sm w-100 h-100 pl-4" id="description">
+
+                        <div class="d-flex flex-row flex-wrap ">
+                            <!--<div class="p-2" style=" margin-bottom: 1em; width: 4em; z-index: 1;"><img src="folder.svg" alt="..." class="img"><p style="text-align: center; background-color: white; text-overflow: ellipsis; overflow: hidden; inline-size: fit-content; padding-inline-end: inherit;">Каникулы</p></div>-->
+                            <div class="fileBox p-2"><img src="folder.svg" alt="..." class="img">
+                                <p>Каникулы</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox clicked p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                                <p>loasfl.txt</p></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="tab-pane fade " id="characteristics" style="background: #83838361; padding: 3em; padding-top: 2em;">
+                        <p style="font-family: myFirstFont; font-size: 1.5em; font-weight: bold;    color: white;">
+                            Моя музыка
+                        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="d-flex flex-row flex-wrap">
+                            <!--<div class="p-2" style=" margin-bottom: 1em; width: 4em; z-index: 1;"><img src="folder.svg" alt="..." class="img"><p style="text-align: center; background-color: white; text-overflow: ellipsis; overflow: hidden; inline-size: fit-content; padding-inline-end: inherit;">Каникулы</p></div>-->
+                            <div class="musicBox p-2">
+                                <img src="img/arts/Thumbs Up - Kill The Noise.jpg" alt="..." class="album img">
+                                <p class="title">Thumbs Up</p>
+                                <p class="author">Kill The Noise</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/Summertime -  Kreayshawn feat. V-Nasty.jpg"
+                                                           alt="..." class="album img">
+                                <p class="title">Summertime</p>
+                                <p class="author">Kreayshawn</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/Forbes (feat. G-Eazy) - Borgore.jpg" alt="..."
+                                                           class="album img">
+                                <p class="title">Forbes</p>
+                                <p class="author">Borgore</p>
+                            </div>
+                            <div class="musicBox p-2"><img
+                                    src="img/arts/Set Me Free - Dillon Francis & Martin Garrix.jpg" alt="..."
+                                    class="album img">
+                                <p class="title">Set Me Free</p>
+                                <p class="author">Dillon Francis & Martin Garrix</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/Rip N Dip - Getter.jpg" alt="..."
+                                                           class="album img">
+                                <p class="title">Rip N Dip</p>
+                                <p class="author">Getter</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/Galvanize - The Chemical Brothers.jpg"
+                                                           alt="..." class="album img">
+                                <p class="title">Galvanize</p>
+                                <p class="author">The Chemical Brothers</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/Cupid's Chokehold - Gym Class Heroes.jpg"
+                                                           alt="..." class="album img">
+                                <p class="title">Cupid's Chokehold</p>
+                                <p class="author">Gym Class Heroes</p>
+                            </div>
+                            <div class="musicBox p-2"><img
+                                    src="img/arts/Big Bank (feat. T.I.) - Big K.R.I.T. feat. T.I..jpg" alt="..."
+                                    class="album img">
+                                <p class="title">Big Bank</p>
+                                <p class="author">Big K.R.I.T.</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/yellow claw - city on lockdown.jpg" alt="..."
+                                                           class="album img">
+                                <p class="title">City on lockdown</p>
+                                <p class="author">Yellow Claw</p>
+                            </div>
+
+                            <div class="musicBox p-2"><img src="img/arts/Believe me - Fort Minor.jpg" alt="..."
+                                                           class="album img">
+                                <p class="title">Believe me</p>
+                                <p class="author">Fort Minor</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/IBETCHU Original Mix - Yellow Claw, Cesqeaux.jpg" alt="..." class="album img">
+                                <p class="title">IBETCHU</p>
+                                <p class="author">Yellow Claw</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/Pegboard Nerds - Blackout 2.jpg" alt="..."
+                                                           class="album img">
+                                <p class="title">Blackout</p>
+                                <p class="author">Pegboard Nerds</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/Hide (Tropkillaz Remix) - N.A.S.A..jpg"
+                                                           alt="..." class="album img">
+                                <p class="title">Hide (Tropkillaz Remix)</p>
+                                <p class="author">N.A.S.A.</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/Стас Михайлов - Жизнь-Река.jpg" alt="..."
+                                                           class="album img">
+                                <p class="title">Жизнь-Река</p>
+                                <p class="author">Стас Михайлов</p>
+                            </div>
+                            <div class="musicBox p-2"><img src="img/arts/Филипп Киркоров - Жестокая любовь.jpg"
+                                                           alt="..." class="album img">
+                                <p class="title">Жестокая любовь</p>
+                                <p class="author">Филипп Киркоров</p>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="player">
+
+                            <div class="player-ui">
+                                <div class="title">
+                                    <h3>Hello</h3>
+                                </div>
+                                <div class="small">
+                                    <i class="material-icons">replay</i>
+                                    <p>Adele</p>
+                                    <i class="material-icons">volume_up</i>
+                                </div>
+                                <div class="progress">
+                                    <div class="played">
+                                        <div class="circle"></div>
+                                    </div>
+                                </div>
+                                <div class="controls">
+                                    <i class="material-icons">skip_previous</i>
+                                    <i class="material-icons">play_arrow</i>
+                                    <i class="material-icons">skip_next</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade  w-100 mt-5" id="opinion">
+
+                        <div >
+
+
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <p style=" z-index: 2; margin: 0.5em; margin-left: 1em; font-family: myFirstFont; font-size: 2em; font-weight: unset; position: absolute; text-decoration: underline; background: #0000006b; color: white; padding-inline-start: 0.7em; padding-inline-end: 0.7em; padding-top: 5px; padding-bottom: 5px;">
+                                    <svg width="1em" style="margin-right: 5px" height="1em" viewBox="0 0 16 16" class="bi bi-images" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M12.002 4h-10a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1zm-10-1a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-10zm4 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    <path fill-rule="evenodd" d="M4 2h10a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2h1a1 1 0 0 1 1-1z"/>
+                                </svg>
+                                    Моя галерея</p>
+
+                                <canvas style="position: absolute; background: #ffffff61; z-index: 1; width: 100%; height: 100%;"></canvas>
+
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" style="    max-height: 15em;">
+                                    <div class="carousel-item active">
+                                        <img src="img/gallery/cloud-landscape.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/gallery/pexels-tobi-620337.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg"
+                                             class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="d-flex flex-row flex-wrap mt-3 justify-content-center">
+                            <div class="card shadow" style="width: 18rem;    margin: 2em;">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">05.01.2020</p>
+                                </div>
+                            </div>
+                            <div class="card shadow" style="width: 18rem;    margin: 2em;">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">05.01.2020</p>
+                                </div>
+                            </div>
+                            <div class="card shadow" style="width: 18rem;    margin: 2em;">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">05.01.2020</p>
+                                </div>
+                            </div>
+                            <div class="card shadow" style="width: 18rem;    margin: 2em;">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">05.01.2020</p>
+                                </div>
+                            </div>
+                            <div class="card shadow" style="width: 18rem;    margin: 2em;">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">05.01.2020</p>
+                                </div>
+                            </div>
+                            <div class="card shadow" style="width: 18rem;    margin: 2em;">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">05.01.2020</p>
+                                </div>
+                            </div>
+                            <div class="card shadow" style="width: 18rem;    margin: 2em;">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">05.01.2020</p>
+                                </div>
+                            </div>
+                            <div class="card shadow" style="width: 18rem;    margin: 2em;">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">05.01.2020</p>
+                                </div>
+                            </div>
+                            <div class="card shadow" style="width: 18rem;    margin: 2em;">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">05.01.2020</p>
+                                </div>
+                            </div>
+                            <div class="card shadow" style="width: 18rem;    margin: 2em;">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">05.01.2020</p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!--
+                            <div class="row">
+                                <div class="col-sm">col-sm</div>
+                                <div class="col-sm">col-sm</div>
+                                <div class="col-sm">col-sm</div>
+                            </div>
+                    -->
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+
+</html>
