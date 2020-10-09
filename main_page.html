@@ -5,7 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
@@ -24,26 +24,27 @@
         window.onload = () => {
             var list = document.getElementsByClassName("fileBox clicked p-2");
             for (var i = 0; i < list.length; i++) list[i].classList.add("shadow-sm")
-
-
         }
 
         function closeAlbums() {
             var body = document.getElementsByTagName("body")[0];
             body.setAttribute('style', '')
-
         }
 
         function openAlbums() {
             var body = document.getElementsByTagName("body")[0];
             body.setAttribute('style', 'background-image:url("img/arts/Rip N Dip - Getter.jpg"); backdrop-filter: blur(100px); background-repeat: no-repeat; background-size: cover;')
         }
+
+
     </script>
 
 </head>
 
 
 <body class="d-flex flex-column min-vh-100 ">
+
+
 
 
 <div class="wrapper flex-grow-1 mt-5 pl-5 pr-5">
@@ -53,11 +54,16 @@
             <div class="row" style="margin: 0; height: 5em">
                 <div class="d-flex justify-content-center" style="height: inherit;">
                     <div class="row" style="height: inherit;">
-                        <img src="32.jpg" class="rounded-circle " alt="Cinque Terre" style="height: inherit; position: absolute;">
+                        <img src="img/32.jpg" class="rounded-circle " alt="Cinque Terre"
+                             style="height: inherit; position: absolute;">
                         <section style="position: relative;">
-                            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="5em" height="5em" xmlns="http://www.w3.org/2000/svg">
-                                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-                                <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                            <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="5em" height="5em"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none"
+                                        cx="16.91549431" cy="16.91549431" r="15.91549431"/>
+                                <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2"
+                                        stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431"
+                                        cy="16.91549431" r="15.91549431"/>
                             </svg>
                         </section>
 
@@ -69,11 +75,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
 
 
             <div class="justify-content-center row">
@@ -110,102 +111,91 @@
 
 
                 <div class="tab-content  w-100">
+
                     <div class="tab-pane fade show active mt-4 shadow-sm w-100 h-100 pl-4" id="description">
+                        <nav aria-label="breadcrumb" style="margin-top: 1em">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Моё облако</a></li>
+                                <li class="breadcrumb-item active" ><a href="#">Личное</a></li>
+                            </ol>
+                        </nav>
 
                         <div class="d-flex flex-row flex-wrap ">
                             <!--<div class="p-2" style=" margin-bottom: 1em; width: 4em; z-index: 1;"><img src="folder.svg" alt="..." class="img"><p style="text-align: center; background-color: white; text-overflow: ellipsis; overflow: hidden; inline-size: fit-content; padding-inline-end: inherit;">Каникулы</p></div>-->
-                            <div class="fileBox p-2"><img src="folder.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/folder.svg" alt="..." class="img">
                                 <p>Каникулы</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/folder.svg" alt="..." class="img">
+                                <p>Картинки</p></div>
+                            <div class="fileBox p-2"><img src="img/folder.svg" alt="..." class="img">
+                                <p>Игры</p></div>
+                            <div class="fileBox p-2"><img src="img/folder.svg" alt="..." class="img">
+                                <p>Музыка</p></div>
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox clicked p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox clicked p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
-                            <div class="fileBox p-2"><img src="3ds.svg" alt="..." class="img">
+                            <div class="fileBox p-2"><img src="img/3ds.svg" alt="..." class="img">
                                 <p>loasfl.txt</p></div>
                         </div>
 
                     </div>
 
 
-                    <div class="tab-pane fade " id="characteristics" style="background: #83838361; padding: 3em; padding-top: 2em;">
-                        <p style="font-family: myFirstFont; font-size: 1.5em; font-weight: bold;    color: white;">
+                    <div class="tab-pane fade " id="characteristics"
+                         style="background: #83838361; padding: 3em; padding-top: 2em; padding-right: 1em">
+                        <p style="font-family: myFirstFont; font-size: 1.5em; font-weight: bold;   ">
                             Моя музыка
                         </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                         <div class="d-flex flex-row flex-wrap">
@@ -263,7 +253,9 @@
                                 <p class="title">Believe me</p>
                                 <p class="author">Fort Minor</p>
                             </div>
-                            <div class="musicBox p-2"><img src="img/arts/IBETCHU Original Mix - Yellow Claw, Cesqeaux.jpg" alt="..." class="album img">
+                            <div class="musicBox p-2"><img
+                                    src="img/arts/IBETCHU Original Mix - Yellow Claw, Cesqeaux.jpg" alt="..."
+                                    class="album img">
                                 <p class="title">IBETCHU</p>
                                 <p class="author">Yellow Claw</p>
                             </div>
@@ -289,10 +281,9 @@
                             </div>
 
 
-
-
                         </div>
-                        <div class="player">
+<!--
+                        <div class="player fixed-bottom">
 
                             <div class="player-ui">
                                 <div class="title">
@@ -315,20 +306,18 @@
                                 </div>
                             </div>
                         </div>
+-->
                     </div>
 
 
                     <div class="tab-pane fade  w-100 mt-5" id="opinion">
 
-                        <div >
+                        <div>
 
 
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                 <p style=" z-index: 2; margin: 0.5em; margin-left: 1em; font-family: myFirstFont; font-size: 2em; font-weight: unset; position: absolute; text-decoration: underline; background: #0000006b; color: white; padding-inline-start: 0.7em; padding-inline-end: 0.7em; padding-top: 5px; padding-bottom: 5px;">
-                                    <svg width="1em" style="margin-right: 5px" height="1em" viewBox="0 0 16 16" class="bi bi-images" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M12.002 4h-10a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1zm-10-1a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-10zm4 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                                    <path fill-rule="evenodd" d="M4 2h10a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2h1a1 1 0 0 1 1-1z"/>
-                                </svg>
+
                                     Моя галерея</p>
 
                                 <canvas style="position: absolute; background: #ffffff61; z-index: 1; width: 100%; height: 100%;"></canvas>
@@ -356,98 +345,217 @@
                         </div>
 
 
-
                         <div class="d-flex flex-row flex-wrap mt-3 justify-content-center">
                             <div class="card shadow" style="width: 18rem;    margin: 2em;">
-                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top"
+                                     alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">05.01.2020</p>
+                                    <p class="card-text">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        </svg>
+                                        05.01.2020
+                                    </p>
                                 </div>
                             </div>
                             <div class="card shadow" style="width: 18rem;    margin: 2em;">
-                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top"
+                                     alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">05.01.2020</p>
+                                    <p class="card-text">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        </svg>
+                                        05.01.2020
+                                    </p>
                                 </div>
                             </div>
                             <div class="card shadow" style="width: 18rem;    margin: 2em;">
-                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top"
+                                     alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">05.01.2020</p>
+                                    <p class="card-text">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        </svg>
+                                        05.01.2020
+                                    </p>
                                 </div>
                             </div>
                             <div class="card shadow" style="width: 18rem;    margin: 2em;">
-                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top"
+                                     alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">05.01.2020</p>
+                                    <p class="card-text">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        </svg>
+                                        06.02.2020
+                                    </p>
                                 </div>
                             </div>
                             <div class="card shadow" style="width: 18rem;    margin: 2em;">
-                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top"
+                                     alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">05.01.2020</p>
+                                    <p class="card-text">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        </svg>
+                                        07.03.2020
+                                    </p>
                                 </div>
                             </div>
                             <div class="card shadow" style="width: 18rem;    margin: 2em;">
-                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top"
+                                     alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">05.01.2020</p>
+                                    <p class="card-text">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        </svg>
+                                        08.04.2020
+                                    </p>
                                 </div>
                             </div>
                             <div class="card shadow" style="width: 18rem;    margin: 2em;">
-                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top"
+                                     alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">05.01.2020</p>
+                                    <p class="card-text">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        </svg>
+                                        09.05.2020
+                                    </p>
                                 </div>
                             </div>
                             <div class="card shadow" style="width: 18rem;    margin: 2em;">
-                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top"
+                                     alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">05.01.2020</p>
+                                    <p class="card-text">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        </svg>
+                                        10.07.2020
+                                    </p>
                                 </div>
                             </div>
                             <div class="card shadow" style="width: 18rem;    margin: 2em;">
-                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top"
+                                     alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">05.01.2020</p>
+                                    <p class="card-text">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        </svg>
+                                        11.08.2020
+                                    </p>
                                 </div>
                             </div>
                             <div class="card shadow" style="width: 18rem;    margin: 2em;">
-                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top" alt="...">
+                                <img src="img/gallery/ruth-chittock-wheeler-park-2-scaled.jpg" class="card-img-top"
+                                     alt="...">
                                 <div class="card-body">
-                                    <p class="card-text">05.01.2020</p>
+                                    <p class="card-text">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event"
+                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                        </svg>
+                                        12.09.2020
+                                    </p>
                                 </div>
                             </div>
-
 
 
                         </div>
 
 
                     </div>
-
-
-                    <!--
-                            <div class="row">
-                                <div class="col-sm">col-sm</div>
-                                <div class="col-sm">col-sm</div>
-                                <div class="col-sm">col-sm</div>
-                            </div>
-                    -->
-
-
                 </div>
+
+                <!--
+                        <div class="row">
+                            <div class="col-sm">col-sm</div>
+                            <div class="col-sm">col-sm</div>
+                            <div class="col-sm">col-sm</div>
+                        </div>
+                -->
+
+
             </div>
-
-
         </div>
+
 
     </div>
 
-
+</div>
 
 
 </body>
+
+
+
+<div class="navbar-fixed-bottom row-fluid">
+    <div class="navbar-inner">
+        <div class="container">
+
+    <div class="player fixed-bottom">
+
+        <div class="player-ui">
+            <div class="title">
+                <h3>Thumbs Up</h3>
+            </div>
+            <div class="small">
+                <i class="material-icons">replay</i>
+                <p>Kill The Noise</p>
+                <i class="material-icons">volume_up</i>
+            </div>
+            <div class="progress">
+                <div class="played">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="material-icons">skip_previous</i>
+                <i class="material-icons">play_arrow</i>
+                <i class="material-icons">skip_next</i>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
 
 
 </html>

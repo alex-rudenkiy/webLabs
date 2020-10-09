@@ -1,13 +1,13 @@
 .player {
     overflow: hidden;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     background: #000000eb;
     /*height: 510px;*/
     padding-bottom: 2em;
-    bottom: 0px;
-    left: 0;
+    /*bottom: 0px;*/
+    /*left: 0;*/
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -227,7 +227,7 @@ html {
 
 @font-face {
     font-family: myFirstFont;
-    src: url("fonts/Roboto-Light.ttf");
+    src: url("../fonts/Roboto-Light.ttf");
 }
 
 div.fileBox {
